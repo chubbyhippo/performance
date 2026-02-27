@@ -18,16 +18,6 @@ public class InvoiceService {
         this.invoices = invoices;
         this.clock = clock;
     }
-//
-//    public InvoiceService(InvoiceRepository invoices) {
-//        this(invoices, Clock.systemUTC());
-//    }
-//
-//    // Handy for tests
-//    InvoiceService(InvoiceRepository invoices, Clock clock) {
-//        this.invoices = invoices;
-//        this.clock = clock;
-//    }
 
     @Transactional
     public void createInvoiceFor(UUID policyId) {
