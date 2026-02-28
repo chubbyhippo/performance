@@ -9,7 +9,7 @@ public class BillingEventHandler {
 
   private final InvoiceService invoices;
 
-  public BillingEventHandler(InvoiceService invoices) {
+  BillingEventHandler(InvoiceService invoices) {
     this.invoices = invoices;
   }
 
