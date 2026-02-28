@@ -6,9 +6,9 @@ import org.springframework.modulith.docs.Documenter;
 
 class ModulithDocsTest {
 
-    @Test
-    void writeDocs() {
-        var modules = ApplicationModules.of(InsuranceApplication.class);
-        new Documenter(modules).writeDocumentation();
-    }
+  @Test
+  void writeDocs() {
+    var modules = ApplicationModules.of(InsuranceApplication.class);
+    new Documenter(modules).writeDocumentation();
+  }
 }
