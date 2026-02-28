@@ -30,11 +30,11 @@ public class PolicyController {
     ) {
     }
 
-    record CreatePolicyResponse(UUID policyId) {
+    private record CreatePolicyResponse(UUID policyId) {
     }
 
     @PostMapping
-    public CreatePolicyResponse create(@RequestBody CreatePolicyRequest req) {
+    CreatePolicyResponse create(@RequestBody CreatePolicyRequest req) {
         UUID id = service.createDraft(req.customerId(), req.coverageType(), req.coverageLimit(), req.startDate(), req.endDate());
         return new CreatePolicyResponse(id);
     }
