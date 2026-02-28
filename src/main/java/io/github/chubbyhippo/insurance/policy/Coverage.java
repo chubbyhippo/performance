@@ -1,11 +1,13 @@
 package io.github.chubbyhippo.insurance.policy;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import java.util.Objects;
 
 @Embeddable
 public final class Coverage {
   private String type;
+  @Column(name = "limit_value")
   private int limit;
 
   protected Coverage() {}
