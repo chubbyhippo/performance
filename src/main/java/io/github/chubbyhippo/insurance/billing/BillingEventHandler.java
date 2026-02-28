@@ -7,19 +7,19 @@ import org.springframework.stereotype.Component;
 @Component
 public class BillingEventHandler {
 
-    private final InvoiceService invoices;
+  private final InvoiceService invoices;
 
-    public BillingEventHandler(InvoiceService invoices) {
-        this.invoices = invoices;
-    }
+  public BillingEventHandler(InvoiceService invoices) {
+    this.invoices = invoices;
+  }
 
-    @ApplicationModuleListener
-    void on(PolicyEvents.PolicyActivated event) {
-        invoices.createInvoiceFor(event.policyId());
-    }
+  @ApplicationModuleListener
+  void on(PolicyEvents.PolicyActivated event) {
+    invoices.createInvoiceFor(event.policyId());
+  }
 
-    @ApplicationModuleListener
-    void on(PolicyEvents.PolicyCancelled event) {
-        invoices.voidOpenInvoicesFor(event.policyId());
-    }
+  @ApplicationModuleListener
+  void on(PolicyEvents.PolicyCancelled event) {
+    invoices.voidOpenInvoicesFor(event.policyId());
+  }
 }
