@@ -42,17 +42,17 @@ public class PolicyController {
   }
 
   @PostMapping("/{id}/activate")
-  public void activate(@PathVariable UUID id) {
+  void activate(@PathVariable UUID id) {
     service.activate(id);
   }
 
   @PostMapping("/{id}/cancel")
-  public void cancel(@PathVariable UUID id) {
+  void cancel(@PathVariable UUID id) {
     service.cancel(id);
   }
 
   @GetMapping("/{id}")
-  public Policy get(@PathVariable UUID id) {
+  Policy get(@PathVariable UUID id) {
     return service.get(id);
   }
 }
