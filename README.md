@@ -5,3 +5,5 @@ curl -fL -o glowroot.zip "https://github.com/glowroot/glowroot/releases/download
   rm glowroot.zip
 
 ```
+## swagger
+http://localhost:8080/swagger-ui.html
