@@ -7,6 +7,7 @@ import java.util.Objects;
 @Embeddable
 public final class Coverage {
   private String type;
+
   @Column(name = "limit_value")
   private int limit;
 
