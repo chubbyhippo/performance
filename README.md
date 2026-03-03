@@ -14,3 +14,6 @@ http://localhost:4000
 ## swagger
 
 http://localhost:8080/swagger-ui.html
+
+## grafana spring boot board
+https://grafana.com/grafana/dashboards/19004-spring-boot-statistics/
