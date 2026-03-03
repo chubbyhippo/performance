@@ -1,4 +1,4 @@
-== download growroot
+== Install growroot
 
 [source,shell,subs="attributes"]
 ----
