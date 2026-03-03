@@ -1,0 +1,5 @@
+== download growroot
+[source,shell,subs="attributes"]
+----
+curl -L "https://github.com/glowroot/glowroot/releases/download/v0.14.4/glowroot-0.14.4-dist.zip" | unzip -d .
+----
