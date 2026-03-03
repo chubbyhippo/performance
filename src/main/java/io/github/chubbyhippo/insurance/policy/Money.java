@@ -2,6 +2,7 @@ package io.github.chubbyhippo.insurance.policy;
 
 import jakarta.persistence.Embeddable;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Currency;
 import java.util.Objects;
 
@@ -15,7 +16,7 @@ public final class Money {
   public Money(BigDecimal amount, Currency currency) {
     if (amount == null || currency == null)
       throw new IllegalArgumentException("Money requires amount + currency");
-    if (amount.scale() > 2) amount = amount.setScale(2);
+    if (amount.scale() > 2) amount = amount.setScale(2, RoundingMode.HALF_UP);
     if (amount.signum() < 0) throw new IllegalArgumentException("Money cannot be negative");
     this.amount = amount;
     this.currency = currency.getCurrencyCode();
