@@ -16,6 +16,10 @@ rm glowroot.zip
 
 ### vm options
 
+```
+-javaagent:./glowroot/glowroot.jar
+```
+
 ## install otel agent
 
 ```shell
