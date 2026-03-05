@@ -1,3 +1,7 @@
+## swagger
+
+http://localhost:8080/swagger-ui.html
+
 ## growroot
 
 http://localhost:4000
@@ -10,9 +14,7 @@ unzip -o glowroot.zip &&
 rm glowroot.zip
 ```
 
-## swagger
-
-http://localhost:8080/swagger-ui.html
+### vm options
 
 ## install otel agent
 
