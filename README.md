@@ -14,6 +14,15 @@ http://localhost:8080/swagger-ui.html
 
 ## install otel agent
 
+### vm options
+
+```
+-javaagent:/path/to/opentelemetry-javaagent.jar
+-Dotel.instrumentation.micrometer.enabled=true
+-Dotel.metric.export.interval=500
+-Dotel.bsp.schedule.delay=500
+```
+
 ## grafana spring boot board
 
 https://grafana.com/grafana/dashboards/19004-spring-boot-statistics/
