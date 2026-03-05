@@ -13,6 +13,10 @@ http://localhost:4000
 http://localhost:8080/swagger-ui.html
 
 ## install otel agent
+```shell
+mkdir opentelemetry-javaagent &&
+curl -fL -o opentelemetry-javaagent/opentelemetry-javaagent.jar "https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v2.25.0/opentelemetry-javaagent.jar"
+```
 
 ### vm options
 
