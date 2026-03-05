@@ -12,6 +12,8 @@ http://localhost:4000
 
 http://localhost:8080/swagger-ui.html
 
+## install otel agent
+
 ## grafana spring boot board
 
 https://grafana.com/grafana/dashboards/19004-spring-boot-statistics/
