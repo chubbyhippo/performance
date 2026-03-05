@@ -1,18 +1,19 @@
+## growroot
+
+http://localhost:4000
+
 ## install growroot
 
 ```shell
 curl -fL -o glowroot.zip "https://github.com/glowroot/glowroot/releases/download/v0.14.4/glowroot-0.14.4-dist.zip" && unzip -o glowroot.zip && rm glowroot.zip
 ```
 
-## growroot
-
-http://localhost:4000
-
 ## swagger
 
 http://localhost:8080/swagger-ui.html
 
 ## install otel agent
+
 ```shell
 mkdir opentelemetry-javaagent &&
 curl -fL -o opentelemetry-javaagent/opentelemetry-javaagent.jar "https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v2.25.0/opentelemetry-javaagent.jar"
@@ -26,6 +27,8 @@ curl -fL -o opentelemetry-javaagent/opentelemetry-javaagent.jar "https://github.
 -Dotel.metric.export.interval=500
 -Dotel.bsp.schedule.delay=500
 ```
+
+http://localhost:4000
 
 ## grafana spring boot board
 
