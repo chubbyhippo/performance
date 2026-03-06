@@ -31,7 +31,7 @@ curl -fL -o opentelemetry-javaagent/opentelemetry-javaagent.jar "https://github.
 
 ```
 -javaagent:/path/to/opentelemetry-javaagent.jar
--Dotel.instrumentation.micrometer.enabled=true
+-Dotel.instrumentation.micrometer.enabled=trude
 -Dotel.metric.export.interval=500
 -Dotel.bsp.schedule.delay=500
 ```
