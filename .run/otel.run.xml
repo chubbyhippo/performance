@@ -3,7 +3,7 @@
     <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
     <module name="insurance" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="io.github.chubbyhippo.insurance.InsuranceApplication" />
-    <option name="VM_PARAMETERS" value="-javaagent:/path/to/opentelemetry-javaagent.jar -Dotel.instrumentation.micrometer.enabled=true -Dotel.metric.export.interval=500 -Dotel.bsp.schedule.delay=500" />
+    <option name="VM_PARAMETERS" value="-javaagent:./opentelemetry-javaagent/opentelemetry-javaagent.jar -Dotel.instrumentation.micrometer.enabled=true -Dotel.metric.export.interval=500 -Dotel.bsp.schedule.delay=500" />
     <extension name="coverage">
       <pattern>
         <option name="PATTERN" value="io.github.chubbyhippo.insurance.*" />
