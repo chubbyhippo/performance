@@ -44,6 +44,10 @@ https://grafana.com/grafana/dashboards/19004-spring-boot-statistics/
 
 ## jfr
 
+```shell
+jmc
+```
+
 https://visualvm.github.io/
 
 ## jmeter
