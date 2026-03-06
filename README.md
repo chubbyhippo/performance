@@ -45,6 +45,10 @@ https://grafana.com/grafana/dashboards/19004-spring-boot-statistics/
 ## jfr
 
 ```shell
+jfr summary app.jfr
+```
+
+```shell
 jmc
 ```
 
