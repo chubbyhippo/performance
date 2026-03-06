@@ -36,7 +36,7 @@ curl -fL -o opentelemetry-javaagent/opentelemetry-javaagent.jar "https://github.
 -Dotel.bsp.schedule.delay=500
 ```
 
-http://localhost:4000
+http://localhost:3000
 
 ## grafana spring boot board
 
