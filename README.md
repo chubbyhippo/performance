@@ -42,4 +42,8 @@ http://localhost:3000
 
 https://grafana.com/grafana/dashboards/19004-spring-boot-statistics/
 
+## jfr
+
+https://visualvm.github.io/
+
 ## jmeter
