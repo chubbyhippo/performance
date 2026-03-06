@@ -20,7 +20,7 @@ rm glowroot.zip
 -javaagent:./glowroot/glowroot.jar
 ```
 
-## install otel agent
+## install otel agent with zero-code instrumentation
 
 ```shell
 mkdir opentelemetry-javaagent &&
